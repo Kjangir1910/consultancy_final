@@ -43,8 +43,9 @@ function ServicesPage() {
         Explore Our Services
       </h2>
 
+      {/* 2 columns for medium screens and up, 1 for small */}
       <div
-        className="grid gap-6 sm:grid-cols-1 md:grid-cols-2"
+        className="grid gap-6 grid-cols-1 md:grid-cols-2"
         style={{ marginBottom: "60px" }}
       >
         {services.map((service, index) => (
@@ -62,3 +63,4 @@ function ServicesPage() {
 }
 
 export default ServicesPage;
+
