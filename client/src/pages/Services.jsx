@@ -43,9 +43,9 @@ function ServicesPage() {
         Explore Our Services
       </h2>
 
-      {/* Responsive grid: 1 col (sm), 2 cols (md), 3 cols (lg+) */}
+      {/* 1 column on small screens, 2 columns from medium screen and up */}
       <div
-        className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+        className="grid gap-6 grid-cols-1 md:grid-cols-2"
         style={{ marginBottom: "60px" }}
       >
         {services.map((service, index) => (
@@ -63,5 +63,3 @@ function ServicesPage() {
 }
 
 export default ServicesPage;
-
-
