@@ -38,14 +38,14 @@ function ServicesPage() {
     <div className="container mx-auto px-4 py-10">
       <h2
         className="text-4xl font-bold text-center mb-10 text-blue-900"
-        style={{ margin: "30px 0px 30px 0px" }}
+        style={{ margin: "30px 0" }}
       >
         Explore Our Services
       </h2>
 
-      {/* 2 columns for medium screens and up, 1 for small */}
+      {/* Responsive grid: 1 col (sm), 2 cols (md), 3 cols (lg+) */}
       <div
-        className="grid gap-6 grid-cols-1 md:grid-cols-2"
+        className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
         style={{ marginBottom: "60px" }}
       >
         {services.map((service, index) => (
@@ -63,4 +63,5 @@ function ServicesPage() {
 }
 
 export default ServicesPage;
+
 
